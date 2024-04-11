@@ -38,7 +38,8 @@ table {
 
 
 <table>
-    <CAPTION>Speaker-level speaker anonymization via Rano</CAPTION>
+    <CAPTION>Speaker Anonymization via Rano</CAPTION>
+    Original utterances in I~III are from the same speaker while IV-VI are from another speaker. Two keys are assigned to all the utterances from these two speakers, respectively.
 <tr>
 <td>  </td>
 <td> Original Speech </td>
@@ -110,22 +111,37 @@ table {
 <p>&nbsp;</p> 
 
 
-## Mel-Spectrogram Samples in One-shot VC
+## Mel-Spectrogram of the Above Tasks
 
 <div style="text-align: center;">
-<img src="assets/mel/mel007.png" width = 1000 />
+<img src="assets/mel/225001.png" width = 600 />
 </div>
-<p align="center">Figure.2 VC task "<i>The rainbow is a division of white light into many beautiful colors.</i>"</p>
+<p align="center">Task I</p>
 
 <div style="text-align: center;">
-<img src="assets/mel/mel010.png" width = 1000 />
+<img src="assets/mel/225002.png" width = 600 />
 </div>
-<p align="center">Figure.3 VC task "<i>People look, but no one finds it.</i>"</p>
+<p align="center">Task II</p>
 
 <div style="text-align: center;">
-<img src="assets/mel/mel013.png" width = 1000 />
+<img src="assets/mel/225004.png" width = 600 />
 </div>
-<p align="center">Figure.4 VC task "<i>Some have accepted it as a miracle without physical explanation.</i>"</p>
+<p align="center">Task III</p>
+
+<div style="text-align: center;">
+<img src="assets/mel/246046.png" width = 600 />
+</div>
+<p align="center">Task IV</p>
+
+<div style="text-align: center;">
+<img src="assets/mel/246047.png" width = 600 />
+</div>
+<p align="center">Task V</p>
+
+<div style="text-align: center;">
+<img src="assets/mel/246049.png" width = 600 />
+</div>
+<p align="center">Task VI</p>
 
 <p>&nbsp;</p> 
 
