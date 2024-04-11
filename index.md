@@ -4,7 +4,7 @@
 <p align="justify">
 </p>
 
-## Overview
+## Architecture
 <p align="justify">
 
 </p>
@@ -15,7 +15,7 @@
 <p align="center">Figure.1 The Architecture of Rano</p>
 <p>&nbsp;</p> 
 
-## Audio Samples in Speaker Anonymization Tasks
+## Audio Samples
 <script>
 function pauseOthers(ele) {
     $("audio").not(ele).each(function (index, audio) {audio.pause();});
@@ -38,45 +38,73 @@ table {
 
 
 <table>
-	<CAPTION>Table.1 Traditional Voice Conversion (seen speakers)</CAPTION>
-    <tr>
-        <th>  </th>
-	<th> Source </th>
-        <th> Target </th>
-        <th> Baseline </th>
-	<th> MAIN-VC </th>
-    </tr>
+    <CAPTION>Speaker-level speaker anonymization via Rano</CAPTION>
 <tr>
-        <th> F2F </th>
-	<th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/s2s_raw/p228_154.mp3" type="audio/mpeg"></audio> </th>
-        <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/s2s_raw/p233_025.mp3" type="audio/mpeg"></audio> </th>
-        <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/ADAINVC/s2s/p228_154_p233_025.mp3" type="audio/mpeg"></audio> </th>
-        <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/MAINVC/s2s/F2Fp228_154_p233_025.mp3" type="audio/mpeg"></audio> </th>
-</tr>
-	
-<tr>
-        <th> M2M </th>
-	<th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/s2s_raw/p374_070.mp3" type="audio/mpeg"></audio> </th>
-        <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/s2s_raw/p286_028.mp3" type="audio/mpeg"></audio> </th>
-        <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/ADAINVC/s2s/p374_070_p286_028.mp3" type="audio/mpeg"></audio> </th>
-        <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/MAINVC/s2s/M2Mp374_070_p286_028.mp3" type="audio/mpeg"></audio> </th>
+<td>  </td>
+<td> Original Speech </td>
+<td> Anonymized Speech </td>
+<td> Restored Speech </td>
 </tr>
 
 <tr>
-        <th> F2M </th>
-	<th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/s2s_raw/p313_300.mp3" type="audio/mpeg"></audio> </th>
-        <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/s2s_raw/p363_041.mp3" type="audio/mpeg"></audio> </th>
-        <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/ADAINVC/s2s/p313_300_p363_041.mp3" type="audio/mpeg"></audio> </th>
-        <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/MAINVC/s2s/F2Mp313_300_p363_041.mp3" type="audio/mpeg"></audio> </th>
+<td rowspan="2"> I </td>
+<td colspan="3"> "Please call Stellar." </td>
 </tr>
-    
 <tr>
-        <th> M2F </th>
-	<th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/s2s_raw/p270_234.mp3" type="audio/mpeg"></audio> </th>
-        <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/s2s_raw/p265_148.mp3" type="audio/mpeg"></audio> </th>
-        <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/ADAINVC/s2s/p270_234_p265_148.mp3" type="audio/mpeg"></audio> </th>
-        <th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/MAINVC/s2s/M2Fp270_234_p265_148.mp3" type="audio/mpeg"></audio> </th>
+<td> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/orig225001.mp3" type="audio/mpeg"></audio> </td>
+<td> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/p286_028.mp3" type="audio/mpeg"></audio> </td>
+<td> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/res225001.mp3" type="audio/mpeg"></audio> </td>
+</tr>
+
+<tr>
+<td rowspan="2"> II </td>
+<td colspan="3"> "Ask her to bring these things with her from the store." </td>
+</tr>
+<tr>
+<td> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/orig225002.mp3" type="audio/mpeg"></audio> </td>
+<td> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/p286_028.mp3" type="audio/mpeg"></audio> </td>
+<td> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/res225002.mp3" type="audio/mpeg"></audio> </td>
+</tr>
+
+<tr>
+<td rowspan="2"> III </td>
+<td colspan="3"> "We also need a small plastic snake and a big toy frog for the kids." </td>
+</tr>
+<tr>
+<td> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/orig225004.mp3" type="audio/mpeg"></audio> </td>
+<td> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/p286_028.mp3" type="audio/mpeg"></audio> </td>
+<td> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/res225004.mp3" type="audio/mpeg"></audio> </td>
 </tr>	
+
+<tr>
+<td rowspan="2"> VI </td>
+<td colspan="3"> "They said she was stable." </td>
+</tr>
+<tr>
+<td> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/orig246046.mp3" type="audio/mpeg"></audio> </td>
+<td> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/p286_028.mp3" type="audio/mpeg"></audio> </td>
+<td> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/res246046.mp3" type="audio/mpeg"></audio> </td>
+</tr>
+
+<tr>
+<td rowspan="2"> V </td>
+<td colspan="3"> "Is a drug dealer?" </td>
+</tr>
+<tr>
+<td> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/orig246047.mp3" type="audio/mpeg"></audio> </td>
+<td> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/p286_028.mp3" type="audio/mpeg"></audio> </td>
+<td> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/res246047.mp3" type="audio/mpeg"></audio> </td>
+</tr>
+
+<tr>
+<td rowspan="2"> VI </td>
+<td colspan="3"> "The State would provide." </td>
+</tr>
+<tr>
+<td> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/orig246049.mp3" type="audio/mpeg"></audio> </td>
+<td> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/p286_028.mp3" type="audio/mpeg"></audio> </td>
+<td> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/audio/res246049.mp3" type="audio/mpeg"></audio> </td>
+</tr>
 </table>
 
 <p>&nbsp;</p> 
