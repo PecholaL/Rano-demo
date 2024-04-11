@@ -74,7 +74,7 @@ table {
 </tr>	
 
 <tr>
-<td rowspan="2"> VI </td>
+<td rowspan="2"> IV </td>
 <td colspan="3"> "They said she was stable." </td>
 </tr>
 <tr>
