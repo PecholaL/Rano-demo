@@ -1,7 +1,5 @@
 # Rano
 
-</p>
-
 ## Architecture
 <p align="justify">
 
