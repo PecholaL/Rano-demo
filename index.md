@@ -1,7 +1,5 @@
 # Rano
 
-## Abstract
-<p align="justify">
 </p>
 
 ## Architecture
