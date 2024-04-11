@@ -8,7 +8,7 @@
 <div style="text-align: center;">
 <img src="assets/rano_frame.png" width = 1000 />
 </div>
-<p align="center">Figure.1 The Architecture of Rano</p>
+<p align="center">The Architecture of Rano</p>
 <p>&nbsp;</p> 
 
 ## Audio Samples
